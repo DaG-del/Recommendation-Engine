@@ -5,4 +5,4 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     records = []
-    return render_template("home.html", records)
+    return render_template("home.html", records=records)
