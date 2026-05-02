@@ -6,6 +6,9 @@ body {
   background: #f5f0e8;
   color: #2c2416;
   font-size: 600% !important;
+  transform: scale(2);
+  transform-origin: top left;
+  width: 50%; /* compensate for scaling */
 }
 
 h3 {
