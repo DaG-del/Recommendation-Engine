@@ -14,7 +14,7 @@ def get_records():
 
     f = open("CSV.const", "r")
 
-    URL = f.read()
+    URL = f.read().strip()
 
     response = requests.get(URL)
     response.raise_for_status()
