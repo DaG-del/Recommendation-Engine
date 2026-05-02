@@ -10,10 +10,10 @@
 
     {% for c in records %}
     <tr>
-        <td>{{ c.type }}</td>
-        <td>{{ c.name }}</td>
-        <td>{{ c.author }}</td>
-        <td>{{ c.description }}</td>
+        <td>{{ c["Enter media type"] }}</td>
+        <td>{{ c["Name"] }}</td>
+        <td>{{ c["Author"] }}</td>
+        <td>{{ c["One line description"] }}</td>
     </tr>
     {% endfor %}
 </table>
