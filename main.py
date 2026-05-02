@@ -20,6 +20,6 @@ def get_records():
     response.raise_for_status()
     
     content = io.StringIO(response.text)
-    reader = csv.reader(content)
+    reader = csv.DictReader(content)
 
     return list(reader)
