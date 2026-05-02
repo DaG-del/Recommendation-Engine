@@ -1,10 +1,7 @@
-from flask import Flask, Blueprint, render_template, request, redirect, url_for, session, current_app
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-if __name__ == "__main__":
-    app.run(debug=True)
-
-@auth.route("/")
+@app.route("/")
 def hello_world():
     return render_template("hello_world.html")
