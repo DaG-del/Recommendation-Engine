@@ -1,75 +1,58 @@
-/* Reset full page background */
-html, body {
-  margin: 0;
-  padding: 0;
-  background: #0e0f14;
-  color: #e6e1d9;
-  font-family: monospace;
-  zoom: 2;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Courier+Prime:ital@0;1&display=swap');
+
+body {
+font-family: 'Courier Prime', monospace;
+background: #f5f0e8;
+color: #2c2416;
+zoom: 2;
 }
 
-/* Optional: ensure common containers inherit dark bg */
-div, section, main {
-  background: transparent;
-}
-
-/* Heading */
 h3 {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 2px solid #ff7a18;
-  padding: 0.75rem 0;
-  margin: 0 0 1.5rem 0;
-  color: #f4c95d;
-  background: transparent; /* prevents white strip */
+font-family: 'Playfair Display', serif;
+font-size: 28px;
+font-weight: 700;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+text-align: center;
+border-bottom: 2px solid #2c2416;
+padding-bottom: 0.75rem;
+margin-bottom: 1.5rem;
 }
 
-/* Table */
 .table-bordered {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 13px;
-  background: #181a22;
-  border-radius: 6px;
-  overflow: hidden;
+border-collapse: collapse;
+width: 100%;
+font-size: 13px;
 }
 
-/* Table head */
 .table-bordered thead tr {
-  border-top: 2px solid #ff7a18;
-  border-bottom: 2px solid #ff7a18;
-  background: #202331;
+border-top: 2px solid #2c2416;
+border-bottom: 2px solid #2c2416;
 }
 
 .table-bordered th {
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding: 8px 10px;
-  text-align: left;
-  font-weight: 700;
-  color: #8be9fd;
-  border: none;
+font-size: 10px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+padding: 8px 10px;
+text-align: left;
+font-weight: 700;
+background: transparent;
+border: none;
 }
 
-/* Table body */
 .table-bordered td {
-  padding: 10px;
-  border: none;
-  border-bottom: 1px dashed #34384a;
-  vertical-align: top;
-  line-height: 1.5;
-  color: #e6e1d9;
-  background: #181a22;
+padding: 10px;
+border: none;
+border-bottom: 1px dashed #b8a98a;
+vertical-align: top;
+line-height: 1.5;
 }
 
 .table-bordered tbody tr:last-child td {
-  border-bottom: none;
+border-bottom: none;
 }
 
 .table-bordered tbody tr:hover td {
-  background: rgba(255, 122, 24, 0.08);
+background: rgba(44, 36, 22, 0.04);
 }
