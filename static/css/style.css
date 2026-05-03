@@ -1,8 +1,16 @@
-body {
-  font-family: monospace;
-  background: #0e0f14; /* full dark background */
+/* Reset full page background */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0e0f14;
   color: #e6e1d9;
+  font-family: monospace;
   zoom: 2;
+}
+
+/* Optional: ensure common containers inherit dark bg */
+div, section, main {
+  background: transparent;
 }
 
 /* Heading */
@@ -13,9 +21,10 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   border-bottom: 2px solid #ff7a18;
-  padding-bottom: 0.75rem;
-  margin-bottom: 1.5rem;
+  padding: 0.75rem 0;
+  margin: 0 0 1.5rem 0;
   color: #f4c95d;
+  background: transparent; /* prevents white strip */
 }
 
 /* Table */
@@ -23,7 +32,7 @@ h3 {
   border-collapse: collapse;
   width: 100%;
   font-size: 13px;
-  background: #181a22; /* consistent dark panel */
+  background: #181a22;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -43,7 +52,6 @@ h3 {
   text-align: left;
   font-weight: 700;
   color: #8be9fd;
-  background: transparent;
   border: none;
 }
 
@@ -55,15 +63,13 @@ h3 {
   vertical-align: top;
   line-height: 1.5;
   color: #e6e1d9;
-  background: #181a22; /* all rows same color */
+  background: #181a22;
 }
 
-/* Remove last border */
 .table-bordered tbody tr:last-child td {
   border-bottom: none;
 }
 
-/* Hover effect */
 .table-bordered tbody tr:hover td {
-  background: rgba(255, 122, 24, 0.08); /* warm glow instead of striping */
+  background: rgba(255, 122, 24, 0.08);
 }
