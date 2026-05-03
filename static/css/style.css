@@ -1,24 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Courier+Prime:ital@0;1&display=swap');
-
 body {
-  font-family: 'Courier Prime', monospace;
-  background: #121217; /* deep charcoal */
-  color: #e6e1d9; /* soft warm white */
+  font-family: monospace;
+  background: #0e0f14; /* full dark background */
+  color: #e6e1d9;
   zoom: 2;
 }
 
 /* Heading */
 h3 {
-  font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 2px solid #ff7a18; /* warm orange accent */
+  border-bottom: 2px solid #ff7a18;
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
-  color: #f4c95d; /* gold tone */
+  color: #f4c95d;
 }
 
 /* Table */
@@ -26,7 +23,7 @@ h3 {
   border-collapse: collapse;
   width: 100%;
   font-size: 13px;
-  background: #1a1b22; /* subtle panel */
+  background: #181a22; /* consistent dark panel */
   border-radius: 6px;
   overflow: hidden;
 }
@@ -35,7 +32,7 @@ h3 {
 .table-bordered thead tr {
   border-top: 2px solid #ff7a18;
   border-bottom: 2px solid #ff7a18;
-  background: #1f2230;
+  background: #202331;
 }
 
 .table-bordered th {
@@ -45,7 +42,7 @@ h3 {
   padding: 8px 10px;
   text-align: left;
   font-weight: 700;
-  color: #8be9fd; /* cyan accent */
+  color: #8be9fd;
   background: transparent;
   border: none;
 }
@@ -54,23 +51,19 @@ h3 {
 .table-bordered td {
   padding: 10px;
   border: none;
-  border-bottom: 1px dashed #3a3d4f;
+  border-bottom: 1px dashed #34384a;
   vertical-align: top;
   line-height: 1.5;
   color: #e6e1d9;
+  background: #181a22; /* all rows same color */
 }
 
-/* Last row cleanup */
+/* Remove last border */
 .table-bordered tbody tr:last-child td {
   border-bottom: none;
 }
 
-/* Row hover */
+/* Hover effect */
 .table-bordered tbody tr:hover td {
-  background: rgba(139, 233, 253, 0.08); /* soft cyan glow */
-}
-
-/* Optional subtle zebra striping */
-.table-bordered tbody tr:nth-child(even) td {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 122, 24, 0.08); /* warm glow instead of striping */
 }
